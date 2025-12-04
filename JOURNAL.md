@@ -92,3 +92,6 @@ From the same example as before:
 Adding up all the invalid IDs in this example produces 4174379265.
 
 What do you get if you add up all of the invalid IDs using these new rules?
+
+### User Message 12
+Alright, let's knock out puzzle 3 now.
