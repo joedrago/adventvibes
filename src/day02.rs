@@ -6,9 +6,8 @@ pub fn solve() {
     let part1_answer = part1(&input);
     println!("Part 1: {}", part1_answer);
 
-    // Part 2 not yet implemented
-    // let part2_answer = part2(&input);
-    // println!("Part 2: {}", part2_answer);
+    let part2_answer = part2(&input);
+    println!("Part 2: {}", part2_answer);
 }
 
 fn is_invalid_id(n: u64) -> bool {
@@ -71,6 +70,79 @@ fn part1(input: &str) -> u64 {
     sum
 }
 
+fn is_invalid_id_v2(n: u64) -> bool {
+    // Part 2: An invalid ID is a number made of some sequence repeated at least twice
+    // e.g., 111 = "1" × 3, 1212121212 = "12" × 5, 123123123 = "123" × 3
+
+    let s = n.to_string();
+    let len = s.len();
+
+    // Need at least 2 digits to have a repetition
+    if len < 2 {
+        return false;
+    }
+
+    // Try all possible pattern lengths from 1 to len/2
+    // (pattern must repeat at least twice, so max pattern length is len/2)
+    for pattern_len in 1..=len / 2 {
+        // Length must be divisible by pattern length
+        if len % pattern_len != 0 {
+            continue;
+        }
+
+        let pattern = &s[..pattern_len];
+
+        // Check if the entire string is just this pattern repeated
+        let mut is_match = true;
+        for i in (pattern_len..len).step_by(pattern_len) {
+            if &s[i..i + pattern_len] != pattern {
+                is_match = false;
+                break;
+            }
+        }
+
+        if is_match {
+            return true;
+        }
+    }
+
+    false
+}
+
+fn part2(input: &str) -> u64 {
+    let mut sum: u64 = 0;
+
+    for line in input.lines() {
+        let line = line.trim();
+        if line.is_empty() {
+            continue;
+        }
+
+        for range_str in line.split(',') {
+            let range_str = range_str.trim();
+            if range_str.is_empty() {
+                continue;
+            }
+
+            let parts: Vec<&str> = range_str.split('-').collect();
+            if parts.len() != 2 {
+                continue;
+            }
+
+            let start: u64 = parts[0].trim().parse().expect("Failed to parse range start");
+            let end: u64 = parts[1].trim().parse().expect("Failed to parse range end");
+
+            for n in start..=end {
+                if is_invalid_id_v2(n) {
+                    sum += n;
+                }
+            }
+        }
+    }
+
+    sum
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -101,5 +173,40 @@ mod tests {
         let input = "11-22";
         // 11, 22 are invalid -> 33
         assert_eq!(part1(input), 11 + 22);
+    }
+
+    #[test]
+    fn test_is_invalid_id_v2() {
+        // Part 2 examples from puzzle
+        assert!(is_invalid_id_v2(11));
+        assert!(is_invalid_id_v2(22));
+        assert!(is_invalid_id_v2(99));
+        assert!(is_invalid_id_v2(111)); // "1" × 3
+        assert!(is_invalid_id_v2(999)); // "9" × 3
+        assert!(is_invalid_id_v2(1010)); // "10" × 2
+        assert!(is_invalid_id_v2(12341234)); // "1234" × 2
+        assert!(is_invalid_id_v2(123123123)); // "123" × 3
+        assert!(is_invalid_id_v2(1212121212)); // "12" × 5
+        assert!(is_invalid_id_v2(1111111)); // "1" × 7
+        assert!(is_invalid_id_v2(222222)); // "2" × 6 or "22" × 3 or "222" × 2
+        assert!(is_invalid_id_v2(565656)); // "56" × 3
+        assert!(is_invalid_id_v2(824824824)); // "824" × 3
+        assert!(is_invalid_id_v2(2121212121)); // "21" × 5
+
+        assert!(!is_invalid_id_v2(12));
+        assert!(!is_invalid_id_v2(123));
+        assert!(!is_invalid_id_v2(1234));
+    }
+
+    #[test]
+    fn test_part2_example_ranges() {
+        // From puzzle example:
+        // 95-115 has 99 and 111
+        let input = "95-115";
+        assert_eq!(part2(input), 99 + 111);
+
+        // 998-1012 has 999 and 1010
+        let input2 = "998-1012";
+        assert_eq!(part2(input2), 999 + 1010);
     }
 }
