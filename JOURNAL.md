@@ -59,3 +59,6 @@ From now on, every time you perform a git commit, please do a "git push origin" 
 
 ### User Message 8
 Please add, commit, and push a README.md that explains what this repo provides, and write it in the tone of a really confused grandma. Add a footnote at the very bottom of the file which explains that the tone of this file is weird because you are attempting to sound like a confused grandma. Also make a cool ascii art header that says VIBES at the top.
+
+### User Message 9
+Alright, it is time to solve part 1 of day 2. Get to solving!
