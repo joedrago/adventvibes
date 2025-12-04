@@ -16,6 +16,10 @@
 2. Update `CLAUDE.md` with any new requirements or important information
 3. Each day's solution prints answers to standard output
 4. Solutions should read from input files in `inputs/` directory
+5. Git workflow:
+   - Always `git push origin` after every commit
+   - Commit `CLAUDE.md` and `JOURNAL.md` changes as separate commits
+   - Update `JOURNAL.md` before committing when acting on user instructions
 
 ## Completed Puzzles
 - Day 1 Part 1: Secret Entrance - Count how many times dial lands on 0 (Answer: 1191)
