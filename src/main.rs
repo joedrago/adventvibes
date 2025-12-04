@@ -1,4 +1,5 @@
 mod day01;
+mod day02;
 
 use std::env;
 
@@ -31,6 +32,7 @@ fn run_day(day: u32) {
     println!("=== Day {:02} ===", day);
     match day {
         1 => day01::solve(),
+        2 => day02::solve(),
         _ => eprintln!("Day {} not implemented yet", day),
     }
 }
@@ -38,4 +40,6 @@ fn run_day(day: u32) {
 fn run_all() {
     println!("Running all implemented puzzles...\n");
     run_day(1);
+    println!();
+    run_day(2);
 }
