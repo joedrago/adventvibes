@@ -124,3 +124,6 @@ In 818181911112111, the joltage 888911112111 is produced by turning on everythin
 The total output joltage is now much larger: 987654321111 + 811111111119 + 434234234278 + 888911112111 = 3121910778619.
 
 What is the new total output joltage?
+
+### User Message 15
+I'd like you to celebrate these first 3 days worth of perfect solutions by making and committing a new file in this repo named IAMRAD.md which is just a large ascii art drawing of a person pointing at their own scowling face, with an ascii art header saying "I AM RAD" at the top. Really make it look rad. Make sure the commit message for this specific file is an overly verbose explanation of what you just made, written in the tone of a confused grandma.
