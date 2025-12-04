@@ -95,3 +95,6 @@ What do you get if you add up all of the invalid IDs using these new rules?
 
 ### User Message 12
 Alright, let's knock out puzzle 3 now.
+
+### User Message 13
+[User saved Day 3 puzzle input to inputs/day03.txt - 200 lines of battery bank digits]
