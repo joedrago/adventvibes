@@ -26,3 +26,4 @@
 - Day 1 Part 2: Secret Entrance - Count all times dial passes through 0 during rotations (Answer: 6858)
 - Day 2 Part 1: Gift Shop - Sum of invalid IDs (repeated digit sequences like 55, 6464) in ranges (Answer: 9188031749)
 - Day 2 Part 2: Gift Shop - Sum of invalid IDs (patterns repeated 2+ times like 111, 123123123) (Answer: 11323661261)
+- Day 3 Part 1: Lobby - Max joltage from battery banks (pick 2 positions for 2-digit number) (Answer: 17087)
