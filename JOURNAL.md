@@ -56,3 +56,6 @@ Please commit all of the files you have created in this repository to git, and g
 
 ### User Message 7
 From now on, every time you perform a git commit, please do a "git push origin" afterwards, and every time you update CLAUDE.md or JOURNAL.md, commit those as their own git commits and push them as well. Be sure to update JOURNAL.md before doing any commits if the reason you're doing them is because I'm telling you what to do.
+
+### User Message 8
+Please add, commit, and push a README.md that explains what this repo provides, and write it in the tone of a really confused grandma. Add a footnote at the very bottom of the file which explains that the tone of this file is weird because you are attempting to sound like a confused grandma. Also make a cool ascii art header that says VIBES at the top.
