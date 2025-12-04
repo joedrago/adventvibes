@@ -6,9 +6,8 @@ pub fn solve() {
     let part1_answer = part1(&input);
     println!("Part 1: {}", part1_answer);
 
-    // Part 2 not yet implemented
-    // let part2_answer = part2(&input);
-    // println!("Part 2: {}", part2_answer);
+    let part2_answer = part2(&input);
+    println!("Part 2: {}", part2_answer);
 }
 
 fn max_joltage(bank: &str) -> u32 {
@@ -52,6 +51,56 @@ fn part1(input: &str) -> u32 {
         .sum()
 }
 
+fn max_joltage_12(bank: &str) -> u64 {
+    // Find the maximum 12-digit joltage by picking exactly 12 battery positions
+    // Greedy algorithm: for each position, pick the maximum digit from valid range
+
+    let digits: Vec<u32> = bank
+        .chars()
+        .filter(|c| c.is_ascii_digit())
+        .map(|c| c.to_digit(10).unwrap())
+        .collect();
+
+    let n = digits.len();
+    if n < 12 {
+        return 0;
+    }
+
+    let mut result: u64 = 0;
+    let mut prev_pos: i32 = -1;
+
+    for i in 0..12 {
+        // For digit i, we can pick from positions (prev_pos+1) to (n-12+i)
+        // This ensures we have enough positions left for remaining digits
+        let start = (prev_pos + 1) as usize;
+        let end = n - 12 + i; // inclusive
+
+        // Find the maximum digit in this range (pick leftmost if tied)
+        let mut max_val = 0;
+        let mut max_pos = start;
+        for p in start..=end {
+            if digits[p] > max_val {
+                max_val = digits[p];
+                max_pos = p;
+            }
+        }
+
+        result = result * 10 + max_val as u64;
+        prev_pos = max_pos as i32;
+    }
+
+    result
+}
+
+fn part2(input: &str) -> u64 {
+    input
+        .lines()
+        .map(|line| line.trim())
+        .filter(|line| !line.is_empty())
+        .map(|bank| max_joltage_12(bank))
+        .sum()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -68,5 +117,19 @@ mod tests {
     fn test_example() {
         let input = "987654321111111\n811111111111119\n234234234234278\n818181911112111";
         assert_eq!(part1(input), 357);
+    }
+
+    #[test]
+    fn test_max_joltage_12() {
+        assert_eq!(max_joltage_12("987654321111111"), 987654321111);
+        assert_eq!(max_joltage_12("811111111111119"), 811111111119);
+        assert_eq!(max_joltage_12("234234234234278"), 434234234278);
+        assert_eq!(max_joltage_12("818181911112111"), 888911112111);
+    }
+
+    #[test]
+    fn test_part2_example() {
+        let input = "987654321111111\n811111111111119\n234234234234278\n818181911112111";
+        assert_eq!(part2(input), 3121910778619);
     }
 }
