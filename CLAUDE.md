@@ -28,3 +28,5 @@
 - Day 2 Part 2: Gift Shop - Sum of invalid IDs (patterns repeated 2+ times like 111, 123123123) (Answer: 11323661261)
 - Day 3 Part 1: Lobby - Max joltage from battery banks (pick 2 positions for 2-digit number) (Answer: 17087)
 - Day 3 Part 2: Lobby - Max joltage picking 12 positions for 12-digit number (Answer: 169019504359949)
+- Day 4 Part 1: Printing Department - Count accessible paper rolls (fewer than 4 adjacent) (Answer: 1480)
+- Day 4 Part 2: Printing Department - Iteratively remove accessible rolls until none left (Answer: 8899)
