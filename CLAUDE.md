@@ -25,3 +25,4 @@
 - Day 1 Part 1: Secret Entrance - Count how many times dial lands on 0 (Answer: 1191)
 - Day 1 Part 2: Secret Entrance - Count all times dial passes through 0 during rotations (Answer: 6858)
 - Day 2 Part 1: Gift Shop - Sum of invalid IDs (repeated digit sequences like 55, 6464) in ranges (Answer: 9188031749)
+- Day 2 Part 2: Gift Shop - Sum of invalid IDs (patterns repeated 2+ times like 111, 123123123) (Answer: 11323661261)
