@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo init:*)",
+      "WebFetch(domain:adventofcode.com)",
+      "Bash(cargo build:*)",
+      "Bash(cargo run:*)",
+      "Bash(cargo test:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
