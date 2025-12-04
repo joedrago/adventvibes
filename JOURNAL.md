@@ -127,3 +127,35 @@ What is the new total output joltage?
 
 ### User Message 15
 I'd like you to celebrate these first 3 days worth of perfect solutions by making and committing a new file in this repo named IAMRAD.md which is just a large ascii art drawing of a person pointing at their own scowling face, with an ascii art header saying "I AM RAD" at the top. Really make it look rad. Make sure the commit message for this specific file is an overly verbose explanation of what you just made, written in the tone of a confused grandma.
+
+## Session 2 - 2025-12-04
+
+### User Message 16
+Day 4 is available! Let's solve it.
+
+### User Message 17
+Can you go get it from the website?
+
+### User Message 18
+Create an empty inputs/day04.txt for me first
+
+### User Message 19
+[User saved Day 4 puzzle input to inputs/day04.txt - 137 lines grid with @ and . characters]
+
+### User Message 20
+Part 1 is correct. How would you like me to give you the text of part 2?
+
+### User Message 21
+Day 4 Part 2:
+
+--- Part Two ---
+Now, the Elves just need help accessing as much of the paper as they can.
+
+Once a roll of paper can be accessed by a forklift, it can be removed. Once a roll of paper is removed, the forklifts might be able to access more rolls of paper, which they might also be able to remove. How many total rolls of paper could the Elves remove if they keep repeating this process?
+
+[Example showing iterative removal of paper rolls, ending with 43 total removed]
+
+Start with your original diagram. How many rolls of paper in total can be removed by the Elves and their forklifts?
+
+### User Message 22
+All submitted, thank you.
