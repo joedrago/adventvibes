@@ -32,3 +32,5 @@
 - Day 4 Part 2: Printing Department - Iteratively remove accessible rolls until none left (Answer: 8899)
 - Day 5 Part 1: Cafeteria - Count available ingredient IDs that fall within fresh ranges (Answer: 707)
 - Day 5 Part 2: Cafeteria - Count total unique IDs covered by all fresh ranges (Answer: 361615643045059)
+- Day 6 Part 1: Trash Compactor - Parse cephalopod math worksheet horizontally and sum results (Answer: 4309240495780)
+- Day 6 Part 2: Trash Compactor - Parse cephalopod math vertically (columns right-to-left) and sum results (Answer: 9170286552289)
