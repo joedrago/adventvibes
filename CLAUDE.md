@@ -34,3 +34,5 @@
 - Day 5 Part 2: Cafeteria - Count total unique IDs covered by all fresh ranges (Answer: 361615643045059)
 - Day 6 Part 1: Trash Compactor - Parse cephalopod math worksheet horizontally and sum results (Answer: 4309240495780)
 - Day 6 Part 2: Trash Compactor - Parse cephalopod math vertically (columns right-to-left) and sum results (Answer: 9170286552289)
+- Day 7 Part 1: Laboratories - Count beam splits in tachyon manifold (Answer: 1594)
+- Day 7 Part 2: Laboratories - Count total timelines using many-worlds interpretation (Answer: 15650261281478)
