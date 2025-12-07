@@ -223,3 +223,28 @@ Solve the problems on the math worksheet again. What is the grand total found by
 
 ### User Message 30
 That's right!
+
+### User Message 31
+Thanks! Let's do Day 7 now.
+
+### User Message 32
+Okay I saved to day07.txt
+
+### User Message 33
+Part 1 is correct. Here's Part 2:
+
+--- Part Two ---
+With your analysis of the manifold complete, you begin fixing the teleporter. However, as you open the side of the teleporter to replace the broken manifold, you are surprised to discover that it isn't a classical tachyon manifold - it's a quantum tachyon manifold.
+
+With a quantum tachyon manifold, only a single tachyon particle is sent through the manifold. A tachyon particle takes both the left and right path of each splitter encountered.
+
+Since this is impossible, the manual recommends the many-worlds interpretation of quantum tachyon splitting: each time a particle reaches a splitter, it's actually time itself which splits. In one timeline, the particle went left, and in the other timeline, the particle went right.
+
+To fix the manifold, what you really need to know is the number of timelines active after a single particle completes all of its possible journeys through the manifold.
+
+[Example showing timeline counting with 40 total timelines in the sample]
+
+Apply the many-worlds interpretation of quantum tachyon splitting to your manifold diagram. In total, how many different timelines would a single tachyon particle end up on?
+
+### User Message 34
+You did it!
