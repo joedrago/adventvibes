@@ -38,3 +38,5 @@
 - Day 7 Part 2: Laboratories - Count total timelines using many-worlds interpretation (Answer: 15650261281478)
 - Day 8 Part 1: Playground - Connect 1000 closest junction box pairs, multiply 3 largest circuit sizes (Answer: 50760)
 - Day 8 Part 2: Playground - Connect all boxes into one circuit, multiply X coords of last pair (Answer: 3206508875)
+- Day 9 Part 1: Movie Theater - Largest rectangle area using two red tiles as corners (Answer: 4760959496)
+- Day 9 Part 2: Movie Theater - Largest rectangle with red corners containing only red/green tiles (Answer: 1343576598)
