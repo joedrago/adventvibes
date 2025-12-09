@@ -36,3 +36,5 @@
 - Day 6 Part 2: Trash Compactor - Parse cephalopod math vertically (columns right-to-left) and sum results (Answer: 9170286552289)
 - Day 7 Part 1: Laboratories - Count beam splits in tachyon manifold (Answer: 1594)
 - Day 7 Part 2: Laboratories - Count total timelines using many-worlds interpretation (Answer: 15650261281478)
+- Day 8 Part 1: Playground - Connect 1000 closest junction box pairs, multiply 3 largest circuit sizes (Answer: 50760)
+- Day 8 Part 2: Playground - Connect all boxes into one circuit, multiply X coords of last pair (Answer: 3206508875)
