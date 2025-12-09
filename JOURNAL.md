@@ -266,3 +266,27 @@ The Elves were right; they definitely don't have enough extension cables. You'll
 Continuing the above example, the first connection which causes all of the junction boxes to form a single circuit is between the junction boxes at 216,146,977 and 117,168,530. The Elves need to know how far those junction boxes are from the wall so they can pick the right extension cable; multiplying the X coordinates of those two junction boxes (216 and 117) produces 25272.
 
 Continue connecting the closest unconnected pairs of junction boxes together until they're all in the same circuit. What do you get if you multiply together the X coordinates of the last two junction boxes you need to connect?
+
+### User Message 38
+Oh, please solve day 9 then!
+
+### User Message 39
+ok I updated day09.txt
+
+### User Message 40
+part 1 is incorrect: That's not the right answer; your answer is too low.
+
+### User Message 41
+Part 1 is now correct. Part 2:
+
+--- Part Two ---
+The Elves just remembered: they can only switch out tiles that are red or green. So, your rectangle can only include red or green tiles.
+
+In your list, every red tile is connected to the red tile before and after it by a straight line of green tiles. The list wraps, so the first red tile is also connected to the last red tile. Tiles that are adjacent in your list will always be on either the same row or the same column.
+
+The interior of the loop formed by red and green tiles is also green. The rectangle must have red tiles in opposite corners, but any other tiles it includes must be red or green.
+
+Using two red tiles as opposite corners, what is the largest area of any rectangle you can make using only red and green tiles?
+
+### User Message 42
+Excellent, thank you.
