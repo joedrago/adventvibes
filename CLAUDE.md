@@ -42,3 +42,5 @@
 - Day 9 Part 2: Movie Theater - Largest rectangle with red corners containing only red/green tiles (Answer: 1343576598)
 - Day 10 Part 1: Factory - Minimum button presses to match light patterns using GF(2) (Answer: 466)
 - Day 10 Part 2: Factory - Minimum button presses to reach joltage targets using ILP (Answer: 17214)
+- Day 11 Part 1: Reactor - Count all paths from "you" to "out" through device network (Answer: 613)
+- Day 11 Part 2: Reactor - Count paths from "svr" to "out" visiting both "dac" and "fft" (Answer: 372918445876116)
