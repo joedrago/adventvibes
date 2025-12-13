@@ -8,6 +8,8 @@ mod day07;
 mod day08;
 mod day09;
 mod day10;
+mod day11;
+mod day12;
 
 use std::env;
 
@@ -49,6 +51,8 @@ fn run_day(day: u32) {
         8 => day08::solve(),
         9 => day09::solve(),
         10 => day10::solve(),
+        11 => day11::solve(),
+        12 => day12::solve(),
         _ => eprintln!("Day {} not implemented yet", day),
     }
 }
@@ -74,4 +78,8 @@ fn run_all() {
     run_day(9);
     println!();
     run_day(10);
+    println!();
+    run_day(11);
+    println!();
+    run_day(12);
 }
