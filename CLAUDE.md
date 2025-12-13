@@ -40,3 +40,5 @@
 - Day 8 Part 2: Playground - Connect all boxes into one circuit, multiply X coords of last pair (Answer: 3206508875)
 - Day 9 Part 1: Movie Theater - Largest rectangle area using two red tiles as corners (Answer: 4760959496)
 - Day 9 Part 2: Movie Theater - Largest rectangle with red corners containing only red/green tiles (Answer: 1343576598)
+- Day 10 Part 1: Factory - Minimum button presses to match light patterns using GF(2) (Answer: 466)
+- Day 10 Part 2: Factory - Minimum button presses to reach joltage targets using ILP (Answer: 17214)
