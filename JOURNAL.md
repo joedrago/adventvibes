@@ -336,3 +336,21 @@ That's not the right answer; your answer is too low. If you're stuck, make sure 
 
 ### User Message 50
 that's it. update all relevant files, commit and push
+
+## Session 7 - 2025-12-13 (continued)
+
+### User Message 51
+Let's solve day 11 and 12 now, just like before.
+
+### User Message 52
+Day 11 Part 2:
+
+--- Part Two ---
+
+Thanks in part to your analysis, the Elves have figured out a little bit about the issue. They now know that the problematic data path passes through both dac (a digital-to-analog converter) and fft (a device which performs a fast Fourier transform).
+
+They're still not sure which specific path is the problem, and so they now need you to find every path from svr (the server rack) to out. However, the paths you find must all also visit both dac and fft (in any order).
+
+[Example showing 8 total paths but only 2 visiting both dac and fft]
+
+Find all of the paths that lead from svr to out. How many of those paths visit both dac and fft?
