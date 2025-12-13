@@ -290,3 +290,49 @@ Using two red tiles as opposite corners, what is the largest area of any rectang
 
 ### User Message 42
 Excellent, thank you.
+
+## Session 6 - 2025-12-13
+
+### User Message 43
+okay lets solve day 10
+
+### User Message 44
+create the file and I'll update it
+
+### User Message 45
+I updated day10.txt
+
+### User Message 46
+please go get the description from the website
+
+### User Message 47
+That's not the right answer; your answer is too high. If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit. Please wait one minute before trying again.
+
+### User Message 48
+Part 1 is correct. Here's Part 2:
+
+--- Part Two ---
+
+All of the machines are starting to come online! Now, it's time to worry about the joltage requirements.
+
+Each machine needs to be configured to exactly the specified joltage levels to function properly. Below the buttons on each machine is a big lever that you can use to switch the buttons from configuring the indicator lights to increasing the joltage levels. (Ignore the indicator light diagrams.)
+
+The machines each have a set of numeric counters tracking its joltage levels, one counter per joltage requirement. The counters are all initially set to zero.
+
+So, joltage requirements like {3,5,4,7} mean that the machine has four counters which are initially 0 and that the goal is to simultaneously configure the first counter to be 3, the second counter to be 5, the third to be 4, and the fourth to be 7.
+
+The button wiring schematics are still relevant: in this new joltage configuration mode, each button now indicates which counters it affects, where 0 means the first counter, 1 means the second counter, and so on. When you push a button, each listed counter is increased by 1.
+
+So, a button wiring schematic like (1,3) means that each time you push that button, the second and fourth counters would each increase by 1. If the current joltage levels were {0,1,2,3}, pushing the button would change them to be {0,2,2,4}.
+
+You can push each button as many times as you like. However, your finger is getting sore from all the button pushing, and so you will need to determine the fewest total presses required to correctly configure each machine's joltage level counters to match the specified joltage requirements.
+
+[Examples showing 10, 12, and 11 presses for three machines totaling 33]
+
+Analyze each machine's joltage requirements and button wiring schematics. What is the fewest button presses required to correctly configure the joltage level counters on all of the machines?
+
+### User Message 49
+That's not the right answer; your answer is too low. If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit. Please wait one minute before trying again.
+
+### User Message 50
+that's it. update all relevant files, commit and push
