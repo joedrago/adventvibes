@@ -44,3 +44,5 @@
 - Day 10 Part 2: Factory - Minimum button presses to reach joltage targets using ILP (Answer: 17214)
 - Day 11 Part 1: Reactor - Count all paths from "you" to "out" through device network (Answer: 613)
 - Day 11 Part 2: Reactor - Count paths from "svr" to "out" visiting both "dac" and "fft" (Answer: 372918445876116)
+- Day 12 Part 1: Christmas Tree Farm - Count regions that can fit all polyomino-shaped presents (Answer: 443)
+- Day 12 Part 2: Christmas Tree Farm - Story ending (no puzzle)
